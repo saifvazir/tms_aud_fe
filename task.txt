@@ -1,0 +1,49 @@
+Hello applicant,
+
+this is a task that is given to test your knowledge on the technologies that
+we are going to use.
+
+techlogies:
+html
+css
+bootstrap
+angularjs
+
+Task:
+you have to make a page called index.html which will look something like the
+image that is in templates folder i.e login_page.png
+
+the data that user will enter will be sent to(post in angular) a backend api
+url:http://ankitesh.pythonanywhere.com/api/v1.0/user_auth
+the data format i.e that the data that will be posted will be
+data = {"payload":{"username":"what_ever_user_enters", "password":"what ever user enters"}}
+
+for testing credentials are
+username = tms_test
+password = bruteforce
+if the user is authenticated successfully the api will return
+{"payload":{"authenticated":1,"profile_details":{"name":"ankitesh", "avatar":"ankitesh.pythonanywhere.com/static/pro_pic.png" "email":"test@gmail.com",
+"books_read":['alpha','beta','gamma'], "languages":['hindi', 'english', 'french']}}}
+
+if the user enters wrong username password api will return 
+{"payload":{"authenticated":0}}
+after authentication user will be redirected to home.html, design is in templates/home_page.png
+
+hint is given in hints.txt.zip
+the password of zip file is bruteforce
+
+next part is, when a user clicks on the top books link a modal will pop up,
+which should look like templates/modal.png
+
+the data in the modal:
+when the user clicks the top books link , get(Angular get request) the data from the given url
+
+url: http://ankitesh.pythonanywhere.com/api/v1.0/get_top_books
+
+you can have a look at the data format by navigating to the link thorugh the browser
+
+NOTE: ALL DATA TRANSACTION WILL BE IN JSON FORMAT
+
+please feel free to ask if any doubt 
+
+submission: push your final task to github
